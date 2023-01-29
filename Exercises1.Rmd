@@ -102,11 +102,15 @@ If you want to avoid arrival delays of your air, especially in December when man
 ### A) What is the 95th percentile of heights for female competitors across all Athletics events?
 
 ```{r, echo=FALSE,fig.width =5, fig.height = 2,fig.align='center'}
-data = olympics_top20 %>% group_by(sport,sex) %>% filter(sex=="F")
-quantile(data$height, 0.95)
+data = olympics_top20 %>%
+ group_by(sex) %>%
+ group_by(sport) %>%
+ filter(sex=="F") %>%
+ filter(sport=="Athletics")
+ quantile(data$height, 0.95)
 ```
 
-From the result, the answer is **186**
+From the result, the answer is **183**
 
 ### B) Which single women's event had the greatest variability in competitor's heights across the entire history of the Olympics, as measured by the standard deviation?
 
