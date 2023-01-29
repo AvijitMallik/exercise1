@@ -1,10 +1,12 @@
 ---
 title: "Exercise 1"
-author: ""
+author: ''
 date: "`r Sys.Date()`"
 output:
+  word_document: default
   pdf_document: default
- 
+  html_document:
+    df_print: paged
 ---
 <!--   pdf_document: default
  md_document -->
@@ -296,5 +298,5 @@ ggplot(data = predict2) + geom_point(mapping = aes(x = mileage, y = y), alpha=0.
 
 ### Which trim yields a larger optimal value of K? Why do you think this is?
 
-The optimal value of k of 63 AMG is larger than that of 350. Because the number of observations for 350 is 416, which is smaller than that or observations for 63 AMG. That means the larger number of observation need larger K to balance between its Bias and Variance. 
+The optimal value of k of 65 AMG is larger than that of 350. Because the number of observations for 350 is 416, which is smaller than that or observations for 65 AMG. That means the larger number of observation need larger K to balance between its Bias and Variance. 
 
