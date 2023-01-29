@@ -289,7 +289,7 @@ on it. The prediction is in the following.
 
 ### Which trim yields a larger optimal value of K? Why do you think this is?
 
-The optimal value of k of 63 AMG is larger than that of 350. Because the
+The optimal value of k of 65 AMG is larger than that of 350. Because the
 number of observations for 350 is 416, which is smaller than that or
-observations for 63 AMG. That means the larger number of observation
+observations for 65 AMG. That means the larger number of observation
 need larger K to balance between its Bias and Variance.
